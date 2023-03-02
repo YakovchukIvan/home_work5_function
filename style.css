@@ -17,16 +17,21 @@ body {
     background-color: rgb(41, 41, 41);
     font-family: "Roboto", sans-serif;
     font-size: 1.2rem;
-    height: 100vh;
+    /* height: 100vh; */
+}
+
+section {
     display: flex;
-    gap: 15px;
+    gap: 120px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     color: white;
+    margin: 100px;
 }
 
 div {
+    max-width: 500px;
     background-color: rgb(56, 56, 56);
     border: 1px solid rgb(27, 27, 27);
     border-radius: 15px;
@@ -34,13 +39,22 @@ div {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
+.task_1, .task_2, .task_3, .task_4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
 ul {
+    max-width: max-content;
     background-color: rgb(56, 56, 56);
     border: 1px solid rgb(27, 27, 27);
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     list-style-type: none;
-    padding: 30px 50px;
+    padding: 20px;
+    margin-top: 30px;
 }
 
 li {
@@ -64,14 +78,37 @@ button {
     box-shadow: rgb(54, 109, 192) 0px 0px 4px 3px,
         rgb(0 0 0 / 30%) 0px 30px 60px -30px,
         rgb(10 37 64 / 35%) 0px -2px 6px 0px inset;
+    margin: 15px 0 25px 0;
 }
 
-button:hover {
-    transform: scale(1.05);
+#value-form, #number-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#taskText {
+    background-color: rgb(50, 97, 81);
+}
+
+input:nth-child(2) {
+    background-color: rgb(50, 69, 97);
+}
+input:nth-child(4) {
+    background-color: rgb(80, 50, 97);
+}
+
+input {
+    border: 2px solid #7bc7ff;
+    border-radius: 5px;
+    padding: 8px 16px;
+    font-size: 16px;
+    color: #fff;
+    font-weight: bold;
 }
 
 button:active {
-    transform: scale(1);
+    transform: scale(0.98);
 }
 
 p {
@@ -84,23 +121,24 @@ p {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 p:nth-child(1) {
-    background-color: rgb(50, 97, 81);
-}
-p:nth-child(2) {
-    background-color: rgb(71, 97, 50);
-}
-p:nth-child(3) {
-    background-color: rgb(50, 97, 54);
-}
-p:nth-child(4) {
     background-color: rgb(50, 69, 97);
 }
+p:nth-child(2) {
+    background-color: rgb(80, 50, 97);
+}
+p:nth-child(3) {
+    background-color: rgb(50, 69, 97);
+}
+p:nth-child(4) {
+    background-color: rgb(80, 50, 97);
+}
 p:nth-child(5) {
-    background-color: rgb(51, 50, 97);
+    background-color: rgb(50, 69, 97);
 }
 p:nth-child(6) {
     background-color: rgb(80, 50, 97);
 }
+
 
 span {
     padding: 5px 10px;
