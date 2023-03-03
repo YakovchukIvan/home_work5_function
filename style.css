@@ -29,7 +29,6 @@ section {
     color: white;
     margin: 100px;
 }
-
 div {
     max-width: 500px;
     background-color: rgb(56, 56, 56);
@@ -38,14 +37,11 @@ div {
     padding: 30px 50px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-
 .task_1, .task_2, .task_3, .task_4 {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
-
 ul {
     max-width: max-content;
     background-color: rgb(56, 56, 56);
@@ -56,7 +52,6 @@ ul {
     padding: 20px;
     margin-top: 30px;
 }
-
 li {
     font-size: 2rem;
     padding: 10px 15px;
@@ -65,7 +60,6 @@ li {
     border-radius: 8px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgb(182, 184, 51) 0px 0px 5px 5px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
-
 button {
     background-color: rgb(54, 109, 192);
     padding: 10px 20px;
@@ -80,24 +74,20 @@ button {
         rgb(10 37 64 / 35%) 0px -2px 6px 0px inset;
     margin: 15px 0 25px 0;
 }
-
-#value-form, #number-form {
+#value-form, #number-form, #divisor-form {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
-
 #taskText {
     background-color: rgb(50, 97, 81);
 }
-
 input:nth-child(2) {
     background-color: rgb(50, 69, 97);
 }
 input:nth-child(4) {
     background-color: rgb(80, 50, 97);
 }
-
 input {
     border: 2px solid #7bc7ff;
     border-radius: 5px;
@@ -106,11 +96,9 @@ input {
     color: #fff;
     font-weight: bold;
 }
-
 button:active {
     transform: scale(0.98);
 }
-
 p {
     padding: 10px 20px;
     display: flex;
@@ -137,12 +125,4 @@ p:nth-child(5) {
 }
 p:nth-child(6) {
     background-color: rgb(80, 50, 97);
-}
-
-
-span {
-    padding: 5px 10px;
-    font-size: 24px;
-    background-color: rgb(130, 184, 51);
-    border-radius: 5px;
 }
